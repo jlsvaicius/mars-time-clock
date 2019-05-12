@@ -1,0 +1,121 @@
+@font-face {
+  font-family: Px Grotesk;
+  src: url(./assets/Px_Grotesk_Screen.ttf);
+}
+
+@font-face {
+  font-family: Px Grotesk Regular;
+  src: url(./assets/Px_Grotesk_Regular.ttf);
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+.design-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.row-top, .row-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 44px;
+}
+
+.row-top {
+  margin-bottom: auto;
+}
+
+.row-bottom {
+  margin-top: auto;
+}
+
+.row-middle-top, .row-middle-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 44px;
+}
+
+.row-middle-top {
+  margin-bottom: 31px;
+}
+
+.mars-left {
+  margin-right: auto;
+}
+
+.mars-right {
+  margin-left: auto;
+}
+
+.earth-left {
+  margin-right: auto;
+}
+
+.earth-right {
+  margin-left: auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.row.left {
+  padding: 54.7px 0 41px 44.3px;
+}
+
+.row.right {
+  padding: 42.7px 43.3px 54px 0;
+}
+
+.row-clock {
+  justify-content: center;
+}
+
+.clock {
+  font-family: Px Grotesk;
+  font-size: 80px;
+  letter-spacing: 17.4px;
+}
+
+.clock:first-child {
+  margin-bottom: 42.3px;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 100;
+  font-family: Px Grotesk Regular;
+  letter-spacing: 1.6px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.text > h2:first-child {
+    margin-bottom: 153px;
+}
+
+.animated-image {
+  animation: infinite-spinning 10s linear infinite;
+}
+
+@keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.image {
+  max-width: 50px;
+  max-height: 50px;
+}
